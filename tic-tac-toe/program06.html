@@ -1,0 +1,744 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Program 6: Classes - Tic-Tac-Toe. | Introduction</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-local-video/video-js.min.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="./assignment02.html" />
+    
+    
+    <link rel="prev" href="./assignment01.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="2.7"
+        data-chapter-title="Program 6: Classes - Tic-Tac-Toe."
+        data-filepath="program06.md"
+        data-basepath="."
+        data-revision="Mon May 09 2016 16:40:40 GMT-0400 (EDT)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="setup.html">
+            
+            <span><b>1.</b> Setup</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="setup01.html">
+            
+                
+                    <a href="./setup01.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Setup 1: Installing Node JS
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="setup02.html">
+            
+                
+                    <a href="./setup02.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Setup 2: Installing Visual Studio Code
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="programs.html">
+            
+            <span><b>2.</b> Programs</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="program01.html">
+            
+                
+                    <a href="./program01.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Program 1: Creating Program Projects
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="program02.html">
+            
+                
+                    <a href="./program02.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Program 2: Getting User Input
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="program03.html">
+            
+                
+                    <a href="./program03.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Program 3: Synchronous vs. Asynchronous
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="program04.html">
+            
+                
+                    <a href="./program04.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Program 4: Classes - The Terminal Class
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="program05.html">
+            
+                
+                    <a href="./program05.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        Program 5: Classes - Pick a number
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="assignment01.html">
+            
+                
+                    <a href="./assignment01.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        Assignment 1:  Modify Pick a number
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.7" data-path="program06.html">
+            
+                
+                    <a href="./program06.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        Program 6: Classes - Tic-Tac-Toe.
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="assignment02.html">
+            
+                
+                    <a href="./assignment02.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        Assignment 2: Finish Tic-Tac-Toe
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Introduction</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="program-6-tictactoe">Program 6: Tic-Tac-Toe</h1>
+<p>We will create a more complicated game tic-tac-toe.</p>
+<p>This will allow us to add more concepts.</p>
+<ul>
+<li>Arrays</li>
+<li>Loops</li>
+</ul>
+<h3 id="arrays">Arrays</h3>
+<p>Arrays allow you to create multiple objects using the same name, and then &apos;index&apos; to specify the object you want.</p>
+<p>To learn more about arrays see <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank">array documentation</a></p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> flintstones = [<span class="hljs-string">&quot;fred&quot;</span>, <span class="hljs-string">&quot;barney&quot;</span>, <span class="hljs-string">&quot;wilma&quot;</span>, <span class="hljs-string">&quot;betty&quot;</span>];
+process.stdio.write(flintstones[<span class="hljs-number">0</span>]+<span class="hljs-string">&apos;\n&apos;</span>)
+process.stdio.write(flintstones[<span class="hljs-number">1</span>]+<span class="hljs-string">&apos;\n&apos;</span>)
+process.stdio.write(flintstones[<span class="hljs-number">2</span>]+<span class="hljs-string">&apos;\n&apos;</span>)
+process.stdio.write(flintstones[<span class="hljs-number">3</span>]+<span class="hljs-string">&apos;\n&apos;</span>)
+</code></pre>
+<p>The output would be</p>
+<pre><code class="lang-javascript">fred
+barney
+wilma
+betty
+</code></pre>
+<p>An array is a name with slots of object. The first slot is 0.</p>
+<h3 id="loops">Loops</h3>
+<p>Loops allow you to interate over arrays as well as create general ways to do things a number of times.</p>
+<p>There are many types of loops</p>
+<ul>
+<li>for loops  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for" target="_blank">Documented here</a></li>
+<li>while loops <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while" target="_blank">Documented here</a></li>
+<li>for...of loops <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of" target="_blank">Documented here</a></li>
+</ul>
+<p>We will just use the classic for loop.</p>
+<p>The following will loop 5 times:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> counter=<span class="hljs-number">0</span>; counter&lt;<span class="hljs-number">5</span>;counter++) {
+    process.stdout.write(<span class="hljs-string">&quot;counter=&quot;</span>+counter+<span class="hljs-string">&quot;\n&quot;</span>);
+}
+</code></pre>
+<ul>
+<li>counter=0 </li>
+<li>counter=1</li>
+<li>counter=2</li>
+<li>counter=3</li>
+<li>counter=4</li>
+</ul>
+<p>It may seem weird to start counting with 0 but Arrays start with element 0.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> flintstones = [<span class="hljs-string">&quot;fred&quot;</span>, <span class="hljs-string">&quot;barney&quot;</span>, <span class="hljs-string">&quot;wilma&quot;</span>, <span class="hljs-string">&quot;betty&quot;</span>];
+<span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i=<span class="hljs-number">0</span>; i &lt; flintstones.length; i++) {
+    process.stdio.write(flintstones[i]+<span class="hljs-string">&apos;\n&apos;</span>)
+}
+</code></pre>
+<p>This has the same output as before:</p>
+<pre><code class="lang-javascript">fred
+barney
+wilma
+betty
+</code></pre>
+<h2 id="create-the-project">Create the project</h2>
+<p>Create a new project like we did in <a href="program01.html">program 1</a> except leave the file empty.</p>
+<p>Save it as app.js.
+Recreate or copy the terminal.js from <a href="program04.html">Program 4: Classes: The Terminal Class</a></p>
+<p>Add the code to include the terminal. Notice do not create the terminal object. We will do that later.</p>
+<pre><code class="lang-javascript"><span class="hljs-pi">&quot;use strict&quot;</span>
+
+<span class="hljs-keyword">const</span> Terminal = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./terminal&apos;</span>)
+</code></pre>
+<h2 id="creating-a-game-board">Creating a Game Board</h2>
+<p>Tic-Tac-Toe has a game board. We will create a class to manage the data of the board.</p>
+<p>We will use an array with 9 slots</p>
+<pre><code> 1 | 2 | 3
+ ---------
+ 4 | 5 | 6 
+ ---------
+ 7 | 8 | 9
+</code></pre><p>Think of the tic-tac-toe game it does have nine places to play.</p>
+<h2 id="creating-the-board-class">Creating the Board class</h2>
+<p>We fill create a board that has our 9 slots.</p>
+<p>We will allow this to: </p>
+<ul>
+<li>have the board cleared = all slot set to 0</li>
+<li>print the board</li>
+<li>check to see if a slot has a piece</li>
+<li>set a piece in the slot</li>
+<li>check for a cats game</li>
+<li>check for a win</li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Board</span> </span>{
+    constructor() {
+    }
+    clearBoard() {
+    }
+    printBoard(terminal) {
+    }
+    hasPiece(place) {
+    }
+    setPiece(place, value) {
+    }
+    checkForCat() {
+    }
+    checkForWin() {
+    }
+}
+</code></pre>
+<h3 id="board-constructor">Board constructor</h3>
+<p>The board constructor creates the slots for the board and clears the board.</p>
+<pre><code class="lang-javascript">constructor() {
+    <span class="hljs-keyword">this</span>.slots = []
+    <span class="hljs-keyword">this</span>.clearBoard();
+}
+</code></pre>
+<h3 id="clearing-the-board">Clearing the Board</h3>
+<p>Clearing the board means you set all nine slots empty. We will use:</p>
+<ul>
+<li>0 to mean empty</li>
+<li>1 to mean X is in the slot</li>
+<li>-1 to mean O is in the slot</li>
+</ul>
+<pre><code class="lang-javascript">clearBoard() {
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">9</span>;i++) {
+        <span class="hljs-keyword">this</span>.slots[i] = <span class="hljs-number">0</span>;
+    }
+}
+</code></pre>
+<p>Using a for loop to set all 9 slots to 0.</p>
+<h3 id="check-if-a-slot-has-a-piece">check if a slot has a piece</h3>
+<p>When check to see if a slot has a piece we check to make sure the place asked is a valid slot.
+The if the slot is not 0 - then its has a piece </p>
+<pre><code class="lang-javascript">hasPiece(place) {
+    <span class="hljs-keyword">if</span>(place&lt;<span class="hljs-number">0</span> || place&gt;=<span class="hljs-number">9</span>) <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+    <span class="hljs-keyword">return</span> !<span class="hljs-keyword">this</span>.slots[place] == <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h3 id="setting-a-slot">setting a slot</h3>
+<p>Similarly if a slot is in bounds, set it to the value passed.</p>
+<pre><code class="lang-javascript">setPiece(place, value) {
+    <span class="hljs-keyword">if</span>(place&lt;<span class="hljs-number">0</span> || place&gt;=<span class="hljs-number">9</span>) <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+    <span class="hljs-keyword">this</span>.slots[place] = value;
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+}
+</code></pre>
+<h3 id="printing-the-board">Printing the board</h3>
+<p>Print the board is logically done by:</p>
+<ul>
+<li>If the slot has 0 print the slot number (but have it based on 1-9)</li>
+<li>If the slot has 1 print &apos;X&apos;</li>
+<li>if the slot has -1 print &apos;O&apos;</li>
+</ul>
+<p>Additionally if this is the 3rd, 6th or 9th slot print a new line.
+How does that look in code?</p>
+<pre><code class="lang-javascript">printBoard(terminal) {
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">9</span>;i++) {
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.slots[i]==<span class="hljs-number">0</span>) {
+            terminal.write((i+<span class="hljs-number">1</span>).toString());
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.slots[i]==<span class="hljs-number">1</span>) {
+            terminal.write(<span class="hljs-string">&quot;X&quot;</span>);
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.slots[i]==-<span class="hljs-number">1</span>) {
+            terminal.write(<span class="hljs-string">&quot;O&quot;</span>);
+        }
+        <span class="hljs-keyword">if</span> ((i+<span class="hljs-number">1</span>)%<span class="hljs-number">3</span>==<span class="hljs-number">0</span>) terminal.writeLine();
+    }
+} 
+<span class="hljs-string">`
+</span></code></pre>
+<h3 id="check-cat-game-and-check-for-win">Check cat Game and check for win</h3>
+<p>This code will go as empty, since this will be your assignment to fill in.</p>
+<h2 id="creating-a-game-class">Creating a game class</h2>
+<p>Our game is a simple &apos;Pick a number&apos; game. With the folllowing basic structure.</p>
+<p>Notice this is basically the same structure as the pick a number game.</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Game</span> </span>{
+  constructor() {
+  }
+  start() {
+  }
+  end() {
+  }
+  askToPlayAgain() {
+  }
+  playTurn() {
+  } 
+}
+</code></pre>
+<ul>
+<li>constructor - creates the game.</li>
+<li>start - starts a new game</li>
+<li>end - will end the game, cleanup so the program ends</li>
+<li>askToPlayAgain - will do just that ask to see if the player would like to play again</li>
+<li>playTurn - will play one turn</li>
+</ul>
+<h2 id="constructor">Constructor</h2>
+<p>Not only do we need  the terminal bu this game needs a board.</p>
+<pre><code class="lang-javascript">constructor() {
+    <span class="hljs-keyword">this</span>.board = <span class="hljs-keyword">new</span> Board();
+    <span class="hljs-keyword">this</span>.terminal = <span class="hljs-keyword">new</span> Terminal();
+}
+</code></pre>
+<h2 id="ending-the-game">Ending the game</h2>
+<p>The end of the game, we will release the terminal by closing it</p>
+<pre><code class="lang-javascript">end() {
+   <span class="hljs-keyword">this</span>.terminal.close();
+}
+</code></pre>
+<h2 id="starting-the-game">Starting the game</h2>
+<p> When the game starts we will clear the screen and then play a turn.
+ Notice that we play a turn on &apos;this&apos; game.</p>
+<pre><code class="lang-javascript"> start() {
+    <span class="hljs-keyword">this</span>.winner = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">this</span>.player = <span class="hljs-number">1</span>;
+    <span class="hljs-keyword">this</span>.board.clearBoard();
+    <span class="hljs-keyword">this</span>.playTurn();
+}
+</code></pre>
+<h2 id="ask-to-play-again">Ask to play again</h2>
+<p> To play again we simply as the question. If the users types &apos;quit&apos; then we end this game, otherwise we play another turn.</p>
+<pre><code class="lang-javascript"> askToPlayAgain() {
+    <span class="hljs-keyword">this</span>.terminal.question(<span class="hljs-string">&quot;Type &apos;quit&apos; to end or anything else to play again then hit enter: &quot;</span>, (line)=&gt;{
+        <span class="hljs-keyword">if</span> (line!==<span class="hljs-string">&apos;quit&apos;</span>) {
+            setImmediate(()=&gt;{<span class="hljs-keyword">this</span>.start();});
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">this</span>.end();
+        }
+    }) 
+}
+</code></pre>
+<p> There is one slight difference with this version. Start is called using setImmediate</p>
+<p> You can think of setImmediate as &apos;start after this function is done&apos;.
+ It&apos;s a bit complex to describe why this is important. But, it lets the function complete before running start.</p>
+<p> It lets the computer better manage the flow of execution.</p>
+<p> You also see the use of the ()=&gt;{} syntax. Called &apos;fat arrow function&apos;
+ This is similar to function () {} </p>
+<p> The arrow function is useful and makes clearer what is meant by the word &apos;this&apos;. </p>
+<p> &apos;this&apos; is a arrow means what you may expect: the game.
+ &apos;this&apos; in a function means the function, which is a bit confusing.</p>
+<p> For more on Arrow function see here: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions" target="_blank">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions</a></p>
+<h2 id="playing-a-turn">Playing a turn</h2>
+<p>As you might expect taking a turn is bit more complicated then with the guess a number game.</p>
+<ul>
+<li>Clear the screen</li>
+<li>print the game board</li>
+<li>See if there is a winner or cats game if so, say so</li>
+<li>If there is no winner, ask for a slot</li>
+<li>if the slot is empty fill it, switch players, check for a win or cats game</li>
+<li>Play another turn </li>
+</ul>
+<pre><code class="lang-javscript">playTurn () {
+        this.terminal.clearScreen();
+        this.board.printBoard(this.terminal);
+        if (this.winner != 0) {
+            if (this.winner === 1) {
+                this.terminal.writeLine(&quot;X wins&quot;);
+            } else if (this.winner === -1) {
+                this.terminal.writeLine(&quot;O wins&quot;);
+            } else if (this.winner === 99) {
+                this.terminal.writeLine(&quot;cats game no one wins\n&quot;);
+            }
+            return setImmediate(()=&gt;{this.askToPlayAgain();});
+        }
+
+        let choice = this.terminal.question(&quot;Pick a slot (1-9): &quot;, (choice)=&gt;{
+            let slot = parseInt(choice)-1;
+            if (slot &gt;=0 &amp;&amp; slot <9) {="" if="" (this.board.hasPiece(slot))="" this.terminal.writeLine("Sorry,="" slot="" taken");="" }="" else="" this.board.setPiece(slot,="" this.player);="" this.player="-this.player;" this.winner="this.board.checkForWin();" setImmediate(()="">{
+                this.playTurn();
+            })   
+        })
+    }
+
+}
+</9)></code></pre>
+<h2 id="creating-the-game-and-staring-it">Creating the game and staring it</h2>
+<p>Finally we use the class we created.</p>
+<ul>
+<li>Create a game </li>
+<li>start it</li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> game = <span class="hljs-keyword">new</span> Game();
+game.start();
+</code></pre>
+<h2 id="running-the-program">Running the program</h2>
+<p>As described before in <a href="program01.html">program 1</a> </p>
+<p>From the command line type: node app.js</p>
+<pre><code>C:\&gt; node app.js
+</code></pre><p>At this point you can run the game and fill in the slots, but it does not check for winners or cats games.</p>
+<h2 id="complete-code-for-appjs">Complete code for app.js</h2>
+<pre><code class="lang-js"><span class="hljs-pi">&quot;use strict&quot;</span>
+
+<span class="hljs-keyword">const</span> Terminal = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./terminal&apos;</span>)
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Board</span> </span>{
+    constructor() {
+        <span class="hljs-keyword">this</span>.slots = []
+        <span class="hljs-keyword">this</span>.clearBoard();
+    }
+    clearBoard() {
+        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">9</span>;i++) {
+            <span class="hljs-keyword">this</span>.slots[i] = <span class="hljs-number">0</span>;
+        }
+    }
+    printBoard(terminal) {
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">9</span>;i++) {
+            <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.slots[i]==<span class="hljs-number">0</span>) {
+                terminal.write((i+<span class="hljs-number">1</span>).toString());
+            } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.slots[i]==<span class="hljs-number">1</span>) {
+                terminal.write(<span class="hljs-string">&quot;X&quot;</span>);
+            } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.slots[i]==-<span class="hljs-number">1</span>) {
+                terminal.write(<span class="hljs-string">&quot;O&quot;</span>);
+            }
+            <span class="hljs-keyword">if</span> ((i+<span class="hljs-number">1</span>)%<span class="hljs-number">3</span>==<span class="hljs-number">0</span>) terminal.writeLine();
+        }
+
+    }
+    hasPiece(place) {
+        <span class="hljs-keyword">if</span>(place&lt;<span class="hljs-number">0</span> || place&gt;=<span class="hljs-number">9</span>) <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+        <span class="hljs-keyword">return</span> !<span class="hljs-keyword">this</span>.slots[place] == <span class="hljs-number">0</span>;
+    }
+    setPiece(place, value) {
+        <span class="hljs-keyword">if</span>(place&lt;<span class="hljs-number">0</span> || place&gt;=<span class="hljs-number">9</span>) <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.slots[place] = value;
+    }
+    checkForCat() {
+       <span class="hljs-comment">// Check for a cats game return true if it is false if it isn&apos;t </span>
+       <span class="hljs-comment">//return false;</span>
+       <span class="hljs-comment">//return true;</span>
+    }
+    checkForWin() {
+        <span class="hljs-comment">// return 1 if X wins</span>
+        <span class="hljs-comment">// return -1 if O wins</span>
+        <span class="hljs-comment">// return 99 if cats game</span>
+        <span class="hljs-comment">// return 0 if no winner</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+    }
+}
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Game</span> </span>{
+    constructor() {
+        <span class="hljs-keyword">this</span>.board = <span class="hljs-keyword">new</span> Board();
+        <span class="hljs-keyword">this</span>.terminal = <span class="hljs-keyword">new</span> Terminal();
+    }
+
+    start() {
+        <span class="hljs-keyword">this</span>.winner = <span class="hljs-number">0</span>;
+        <span class="hljs-keyword">this</span>.player = <span class="hljs-number">1</span>;
+        <span class="hljs-keyword">this</span>.board.clearBoard();
+        <span class="hljs-keyword">this</span>.playTurn();
+    }
+
+    end() {
+        <span class="hljs-keyword">this</span>.terminal.close();
+    }
+
+    askToPlayAgain() {
+        <span class="hljs-keyword">this</span>.terminal.question(<span class="hljs-string">&quot;Type &apos;quit&apos; to end or anything else to play again then hit enter: &quot;</span>, (line)=&gt;{
+            <span class="hljs-keyword">if</span> (line!==<span class="hljs-string">&apos;quit&apos;</span>) {
+                setImmediate(()=&gt;{<span class="hljs-keyword">this</span>.start();});
+            } <span class="hljs-keyword">else</span> {
+                <span class="hljs-keyword">this</span>.end();
+            }
+        }) 
+    }
+
+    playTurn () {
+        <span class="hljs-keyword">this</span>.terminal.clearScreen();
+        <span class="hljs-keyword">this</span>.board.printBoard(<span class="hljs-keyword">this</span>.terminal);
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.winner != <span class="hljs-number">0</span>) {
+            <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.winner === <span class="hljs-number">1</span>) {
+                <span class="hljs-keyword">this</span>.terminal.writeLine(<span class="hljs-string">&quot;X wins&quot;</span>);
+            } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.winner === -<span class="hljs-number">1</span>) {
+                <span class="hljs-keyword">this</span>.terminal.writeLine(<span class="hljs-string">&quot;O wins&quot;</span>);
+            } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.winner === <span class="hljs-number">99</span>) {
+                <span class="hljs-keyword">this</span>.terminal.writeLine(<span class="hljs-string">&quot;cats game no one wins\n&quot;</span>);
+            }
+            <span class="hljs-keyword">return</span> setImmediate(()=&gt;{<span class="hljs-keyword">this</span>.askToPlayAgain();})
+        }
+
+        <span class="hljs-keyword">let</span> choice = <span class="hljs-keyword">this</span>.terminal.question(<span class="hljs-string">&quot;Pick a slot (1-9): &quot;</span>, (choice)=&gt;{
+            <span class="hljs-keyword">let</span> slot = <span class="hljs-built_in">parseInt</span>(choice)-<span class="hljs-number">1</span>;
+            <span class="hljs-keyword">if</span> (slot &gt;=<span class="hljs-number">0</span> &amp;&amp; slot &lt;<span class="hljs-number">9</span>) {
+                <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.board.hasPiece(slot)) {
+                    <span class="hljs-keyword">this</span>.terminal.writeLine(<span class="hljs-string">&quot;Sorry, slot taken&quot;</span>);
+                } <span class="hljs-keyword">else</span> {
+                    <span class="hljs-keyword">this</span>.board.setPiece(slot, <span class="hljs-keyword">this</span>.player);
+                    <span class="hljs-keyword">this</span>.player = -<span class="hljs-keyword">this</span>.player;
+                    <span class="hljs-keyword">this</span>.winner = <span class="hljs-keyword">this</span>.board.checkForWin(); 
+
+                }
+            }
+            setImmediate(()=&gt;{
+                <span class="hljs-keyword">this</span>.playTurn();
+            })   
+        })
+    }
+
+}
+
+<span class="hljs-keyword">let</span> g = <span class="hljs-keyword">new</span> Game()
+g.start()
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./assignment01.html" class="navigation navigation-prev " aria-label="Previous page: Assignment 1:  Modify Pick a number"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./assignment02.html" class="navigation navigation-next " aria-label="Next page: Assignment 2: Finish Tic-Tac-Toe"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-local-video/video.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"local-video":{},"include-highlight":{},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
