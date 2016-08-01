@@ -57,7 +57,7 @@
         data-chapter-title="Program 2: Getting User Input"
         data-filepath="program02.md"
         data-basepath="."
-        data-revision="Mon May 09 2016 16:40:40 GMT-0400 (EDT)"
+        data-revision="Mon Aug 01 2016 16:51:50 GMT-0400 (EDT)"
         data-innerlanguage="">
     
 
@@ -331,7 +331,7 @@ Readline can get the input one line at a time.</p>
 <p>The input object has a function &apos;question&apos;. Question outputs a questions and watches for events on the input stream. It keeps track of all the keys hit until the enter key is hit.</p>
 <p>Once the enter key it sends an event with all the keys hit. </p>
 <p>Add the following to your app.js </p>
-<pre><code class="lang-javascript">input.question(<span class="hljs-string">&quot;Would you like to play a game?&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">line</span>)</span>{
+<pre><code class="lang-javascript">input.question(<span class="hljs-string">&quot;Would you like to play a game?&quot;</span>,  (line) =&gt; {
     process.stdout.write(line+<span class="hljs-string">&apos;\n&apos;</span>);
      <span class="hljs-comment">// This tells the system we are done using input and output</span>
     input.close(); 
@@ -339,6 +339,17 @@ Readline can get the input one line at a time.</p>
 </code></pre>
 <p>This will ask the question &quot;Would you like to play a game?&quot;.
 Separately the computer will now watch for the events described. When the enter key is hit, the function is called. This is called an event handler function and also a &apos;callback&apos; function; it calls bacl to your program when an event occurs.</p>
+<p>This syntax is a &apos;arrow function&apos;.</p>
+<pre><code class="lang-javascript"> (line) =&gt; {
+    . . .
+ }
+</code></pre>
+<p>You also see the use of the ()=&gt;{} syntax. Called &apos;fat arrow function&apos;
+If you have used javascript before arrow is similar to function () {} </p>
+<p>The arrow function is useful and makes clearer what is meant by the word &apos;this&apos;. </p>
+<p>&apos;this&apos; is a arrow means what you may expect: the game.
+&apos;this&apos; in a function means the function, which is a bit confusing.</p>
+<p> For more on Arrow function see here: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions" target="_blank">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions</a></p>
 <p>When that event occurs the callback function will print out what was typed and close the input.
 &apos;close&apos; tells it to stop looking for events.</p>
 <p>If it is no longer looking for events, the program ends. </p>
@@ -363,7 +374,7 @@ Separately the computer will now watch for the events described. When the enter 
 
 <span class="hljs-comment">// Notice we need to wait to close the input</span>
 <span class="hljs-comment">// until we are done using it</span>
-input.question(<span class="hljs-string">&quot;Would you like to play a game?&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">line</span>)</span>{
+input.question(<span class="hljs-string">&quot;Would you like to play a game?&quot;</span>,  (line) =&gt; {
    <span class="hljs-comment">// Print the line sent to to the event handler functions</span>
     process.stdout.write(line+<span class="hljs-string">&apos;\n&apos;</span>);
      <span class="hljs-comment">// This tells the system we are done using input and output</span>

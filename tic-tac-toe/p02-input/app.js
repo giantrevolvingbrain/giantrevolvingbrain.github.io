@@ -13,7 +13,7 @@ const input = readline.createInterface({
 
 // Notice we need to wait to close the input
 // until we are done using it
-input.question("Would you like to play a game?", function (line){
+input.question("Would you like to play a game?",  (line) => {
    // Print the line sent to to the event handler functions
     process.stdout.write(line+'\n');
      // This tells the system we are done using input and output
